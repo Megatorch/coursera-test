@@ -1,112 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Common styles for section and section title */
-        .section, .section-title {
-            border: 1px solid black;
-            box-sizing: border-box;
-        }
-
-        /* Desktop view */
-        @media screen and (min-width: 992px) {
-            .container {
-                display: flex;
-            }
-
-            .section {
-                width: 33.33%;
-                padding: 20px;
-            }
-
-            .section-title {
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                background-color: #ffcc00; /* Yellow */
-                padding: 5px 10px;
-                font-size: 125%; /* 25% larger */
-            }
-        }
-
-        /* Tablet view */
-        @media screen and (min-width: 768px) and (max-width: 991px) {
-            .container {
-                display: block;
-            }
-
-            .section {
-                width: 50%;
-                padding: 20px;
-                float: left;
-                box-sizing: border-box;
-            }
-
-            .section:nth-child(3) {
-                clear: both;
-            }
-
-            .section-title {
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                background-color: #ff9900; /* Orange */
-                padding: 5px 10px;
-                font-size: 125%; /* 25% larger */
-            }
-        }
-
-        /* Mobile view */
-        @media screen and (max-width: 767px) {
-            .container {
-                display: block;
-            }
-
-            .section {
-                width: 100%;
-                padding: 20px;
-                box-sizing: border-box;
-            }
-
-            .section-title {
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                background-color: #99ccff; /* Light blue */
-                padding: 5px 10px;
-                font-size: 125%; /* 25% larger */
-            }
-        }
-
-        /* Dummy styles for demonstration */
-        .section {
-            margin-bottom: 20px;
-            background-color: #f0f0f0; /* Light grey */
-        }
-    </style>
+    <title>Food, LLC - Our Menu</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<style>
+body {
+    padding-top: 50px; 
+}
+
+.main-section {
+    background-color: #f5f5f5; 
+    padding: 20px 0;
+    min-height: 1000px; 
+}
+</style>
+<nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
-        <div class="section">
-            <div class="section-title">Chicken</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel est quis ligula tempus mollis.</p>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Food, LLC</a>
         </div>
-        <div class="section">
-            <div class="section-title">Beef</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel est quis ligula tempus mollis.</p>
-        </div>
-        <div class="section">
-            <div class="section-title">Sushi</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel est quis ligula tempus mollis.</p>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right visible-xs">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Chicken</a></li>
+                        <li><a href="#">Beef</a></li>
+                        <li><a href="#">Sushi</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <h1>Our Menu</h1>
+        </div>
+    </div>
+</div>
+
+<div class="main-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                content
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
