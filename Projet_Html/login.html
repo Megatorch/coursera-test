@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="style.css">
+<img src="shop.jpg" class="background-image">
+<div id="div2" class="sign">
+    
+        <h1 style="text-align: center;">Login</h1>
+<div class="user">
+    <input type="text" placeholder="username" id="in1">
+</div>
+<br>
+<div class="user">
+    <input type="password" placeholder="password" id="in2">
+</div>
+<br>
+    <b><span id="s1" style="color: rgb(255, 30, 30);"></span></b>
+<br>
+<div>
+ <input type="checkbox" onclick="showp()"> Show password   
+</div>
+<br>
+    <div>
+<input class="log" onclick="login()" type="submit" value="login">
+    </div>
+    <div>
+<input class="log" onclick="showCreateAccount()" type="submit" value="Create account">
+    </div>
+</div>
+
+<div id="createAccount" class="sign" style="display:none;">
+    <h1 style="text-align: center;">Create Account</h1>
+    <div class="user">
+        <input type="text" placeholder="username" id="Sin1">
+    </div>
+    <br>
+    <div class="user">
+        <input type="email" placeholder="Email" id="Sin3">
+    </div>
+    <br>
+    <div class="user">
+        <input type="password" placeholder="password" id="Sin2">
+    </div>
+    <br><br>
+    <span id="s3" style="color: red;"></span>
+    <div>
+    <br>
+<div>
+ <input type="checkbox" onclick="showp()"> Show password   
+</div>
+    <input class="log" onclick="signup()" type="submit" value="sign up">
+        </div>
+</div>
+
+    
+
+<script src="script.js"></script>
